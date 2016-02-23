@@ -53,7 +53,7 @@ SFE_BMP180 pressure;
 
 // Declaro variables globales
 const char *ssid            = "libertad";		         // cannot be longer than 32 characters!
-const char *pass            = "satanylola";		         //
+const char *pass            = "";		         //
 char* tempTopic             = "openhab/sensor1/temperature";     // topic to publish temperatures (DHT11) readings to
 char* temp2Topic            = "openhab/sensor1/temperature2";    // topic to publish temperatures (bmp180) readings to
 char* pressureTopic         = "openhab/sensor1/pressure";        // topic for barometric pressure
