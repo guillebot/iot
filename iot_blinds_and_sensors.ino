@@ -236,7 +236,7 @@ void loop() {
 
   if (WiFi.status() == WL_CONNECTED) {
     if (!mqttclient.connected()) {
-      if (mqttclient.connect("sensor1", "sensores", "picad0r3s")) {
+      if (mqttclient.connect("sensor1", "sensores", "")) {
         Serial.println("MQTT Client connected");
         mqttclient.setCallback(callback);
         mqttclient.subscribe("openhab/sensor1/persiana");
